@@ -1,6 +1,5 @@
 pipeline{
     agent any
-         label 'agent1'
     stages{
 stage ('code compile'){
             steps{
