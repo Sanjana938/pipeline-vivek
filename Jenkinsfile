@@ -31,7 +31,7 @@ stage ('code compile'){
         }
         stage("Deploy into tomcat"){
             steps{
-                          deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://35.86.109.95:8000//')], contextPath: null, war: '**/*.war'
+                          deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://35.86.109.95:8000/')], contextPath: null, war: '**/*.war'
             }
         }
          stage('Send Email Notification') {
